@@ -45,7 +45,7 @@
 
                                         <div class="CA-btn">
 
-                                            <button>See More</button>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">See More</button>
                                             
                                             <div class="powered-by">
                                                 
@@ -367,6 +367,31 @@
         </div>
 
     </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Which demo would you like to see?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div style="border: 1px solid #000;" class="col-6 py-5 text text-center">Banking BI System</div>
+                <div style="border: 1px solid #000;" class="col-6 py-5 text-center">Insurance BI System</div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
