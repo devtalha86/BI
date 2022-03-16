@@ -444,12 +444,16 @@ cursor: pointer;
   /* FEATURE START */
 
   .sidebar {
-    width: 25%;
+    width: 35%;
     height: 65vh;
     min-height: 200px;
     overflow: auto;
     position: sticky;
     top: 5%;
+  }
+
+  .sidebar ul li{
+    padding: 6px 0;
   }
   
   .main {
