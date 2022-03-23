@@ -134,7 +134,7 @@ h4{
 }
 
 
-.CA-HeroTitle .CA-btn{
+.CA-HeroTitle .CA-btnHero{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -142,7 +142,7 @@ h4{
     margin-top: 65px;
 }
 
-.CA-HeroTitle .CA-btn .powered-by{
+.CA-HeroTitle .CA-btnHero .powered-by{
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     padding-left: 15px;
     margin-left: 15px;
@@ -150,7 +150,7 @@ h4{
     
 }
 
-.CA-HeroTitle .CA-btn .powered-by p{
+.CA-HeroTitle .CA-btnHero .powered-by p{
 margin: 0;
 font-style: normal;
 font-weight: 300;
@@ -162,7 +162,7 @@ text-transform: initial;
 line-height: 22px;
 }
 
-.CA-HeroTitle .CA-btn .powered-by p span{
+.CA-HeroTitle .CA-btnHero .powered-by p span{
 
     font-style: normal;
     font-weight: 300;
@@ -173,24 +173,47 @@ line-height: 22px;
     text-transform: lowercase;
     }
 
-.CA-HeroTitle .CA-btn button{
-    padding: 12px 20px 10px;
-outline: none;
-background: #031A44;
-border: 0;
-text-align: center;
+.CA-btnHero button{
+  border-radius: 0;
+  padding: 12px 20px 10px;
+  outline: none;
+  background: #031A44;
+  border: 0;
+  text-align: center;
 
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 30px;
-/* identical to box height, or 188% */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
 
-letter-spacing: 0.25em;
-text-transform: uppercase;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
 
-color: #FFFFFF;
-cursor: pointer;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+  
+
+.CA-btn button{
+    padding: 8px 20px 7px;
+    outline: none;
+    background: #031A44;
+    border: 0;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 0;
 }
 
 
@@ -443,9 +466,16 @@ cursor: pointer;
 
   /* FEATURE START */
 
+
+  .featureIcon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15PX;
+  }
+
   .sidebar {
     width: 35%;
-    height: 65vh;
+    height: 90vh;
     min-height: 200px;
     overflow: auto;
     position: sticky;
@@ -458,7 +488,7 @@ cursor: pointer;
   
   .main {
     width: 60%;
-    height: 600vh;
+    height: 630vh;
     min-height: 1000px;
     display: flex;
     flex-direction: column;
@@ -490,3 +520,135 @@ cursor: pointer;
   }
 
   /* FEATURE END */
+
+
+
+  /* INSUDTRY START */
+
+.industryCard{
+  background-color: #fff;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 15px rgba(126, 126, 126, 0.15);
+}
+
+.contactForm{
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(126, 126, 126, 0.15);
+}
+
+.contactDetails{
+  
+}
+
+.contactPerson .name{
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+  /* INSUDTRY End */
+
+
+
+  footer{
+    background-color: #031A44;
+    padding: 60px 0;
+    margin: 0;
+  }
+
+  .footerLinks{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footerLinks ul{
+    list-style: none;
+  }
+
+  .footerLinks ul li:first-child{
+    line-height: 40px;
+  }
+
+  .footerLinks ul li{
+    line-height: 26px;
+  }
+
+  .footerLinks ul li a{
+    color: inherit;
+  }
+
+
+  /* WIDGET START */
+
+  .choice-banking, .choice-insurance{
+    border: 1px solid #007CC3;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1
+  }
+
+  .choice-banking{
+    margin-right: 10px;
+  }
+
+  .choice-insurance{
+    margin-left: 10px;
+  }
+  
+  .banking-icon{
+    background: url(images/banking-icon.svg) center no-repeat;
+    width: 70px;
+    height: 64px;
+  }
+
+  .insurance-icon{
+    background: url(images/insurance-icon.svg) center no-repeat;
+    width: 62px;
+    height: 64px;
+  }
+
+  .choice-banking:hover .banking-icon{
+    background: url(images/banking-icon-hover.svg) center no-repeat;
+  }
+
+  .choice-insurance:hover .insurance-icon{
+    background: url(images/insurance-icon-hover.svg) center no-repeat;
+  }
+
+  .choice-banking:hover, .choice-insurance:hover{
+    background-color: #007CC3;
+    cursor: pointer;
+  }
+
+  .choice-banking:hover h3, .choice-insurance:hover h3{
+    color: #ffffff;    
+  }
+
+  .choice-banking h3, .choice-insurance h3{
+    font-size: 16px;
+    color: #005EA4;
+    margin-top: 20px;
+  }
+
+  .selected{
+    background: #007CC3 url(images/bi-selected.svg) center no-repeat;
+    background-position: 12px 12px;
+  }
+
+  .selected h3{
+    color: #ffffff;
+  }
+
+  .selected .banking-icon{
+    background: url(images/banking-icon-hover.svg) center no-repeat;
+  }
+
+  .selected .insurance-icon{
+    background: url(images/insurance-icon-hover.svg) center no-repeat;
+  }
+
+  /* WIDGET END */
