@@ -3,9 +3,13 @@ html {
 }
 
 body{
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #6D6D6D;
+}
+
+p{
+  color: #6D6D6D;
 }
 
 .spacer{
@@ -20,7 +24,6 @@ body{
     
     /* transform: rotate(-90deg); */
     
-
 }
 
 
@@ -467,6 +470,14 @@ line-height: 22px;
   /* FEATURE START */
 
 
+  .description{
+    margin-top: 30px;
+    background-color: rgb(241, 241, 241);
+    padding: 15px 15px;
+    border-top: 1px dased #000;
+  }
+
+
   .featureIcon {
     display: flex;
     align-items: center;
@@ -484,6 +495,15 @@ line-height: 22px;
 
   .sidebar ul li{
     padding: 6px 0;
+  }
+
+  ul.featureList{
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.featureList li{
+    list-style-type: none;
   }
   
   .main {
@@ -592,11 +612,11 @@ line-height: 22px;
   }
 
   .choice-banking{
-    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .choice-insurance{
-    margin-left: 10px;
+    margin-right: 10px;
   }
   
   .banking-icon{

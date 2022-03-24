@@ -11,6 +11,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
     <title>Celloscope Analytics</title>
   </head>
   <body>
@@ -126,18 +131,54 @@
 
                                 <div class="card">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="images/prod-banking.jpg" class="w-100">
+                                        <div class="col-md-5">
+                                            <!-- <img class="img-fluid" src="images/prod-banking.jpg"> -->
+                                            <a href="#" class="pop">
+                                                <img src="https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045_1280.jpg" style="width: 400px; height: 264px;">
+                                            </a>
+                                            <!-- Creates the bootstrap modal where the image will appear -->
+                                            
+                                            <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">              
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <img src="" class="imagepreview" style="width: 100%;" >
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+  
+
                                         </div>
                                         
-                                        <div class="col-md-8 ">
-                                            <div class="card-block pl-5">
+                                        <div class="col-md-7">
+                                            <div class="card-block pl-4">
                                                 <h4 class="card-title">Agrani DOER Agent Banking Business Intelligence (BI) System</h4>
                                                 <p class="card-text">A Smart Technology that provides all Reports and Analytics under one roof without the dependency of a team of data analysts or data scientists.</p><p> Extracting the large amount of raw data from the internal database the role-based BI automatically generates and updates your interactive reports and visualizations that empowers not only the Managers and Business Executives in the office, but also the Agents on the fields. Utilizing the power of Data Science and Machine Learning this system can exhibit the future state/growth of the business and help making smart decisions based on that. </p>
                                                 
 
-                                                <div class="CA-btn"><button class="btn btn-primary" >Read More</button></div>
+                                                <div class="CA-btn"><button onclick=" window.open('https://shabbir-celloscope.shinyapps.io/Demo_Banking_App/','_blank')"  class="btn btn-primary" >See banking bi demo</button></div>
                                                 
+                                                <div class="description">
+                                                    <p>Banking BI system requires user id and password, based on user id and role one can access different platforms.</p>
+                                                    <div class="d-flex">
+                                                        <div class="mr-5">
+                                                            <h6 style="color: #000;">Admin</h6>
+                                                            <p>Userid: admin123 <br>
+                                                            Password: admin010
+                                                            </p>
+                                                        </div>
+
+                                                        <div>
+                                                            <h6 style="color: #000;">Branch</h6>
+                                                            <p>Userid: alabama123 <br>
+                                                            Password: 5v4q6s
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
 
@@ -149,15 +190,15 @@
                                 
                                 <div class="card">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="images/prod-insurance.jpg" class="w-100">
+                                        <div class="col-md-5">
+                                            <img src="images/prod-insurance.jpg" class="img-fluid">
                                         </div>
                                         
-                                        <div class="col-md-8 pl-5">
-                                            <div class="card-block ">
+                                        <div class="col-md-7">
+                                            <div class="card-block pl-4">
                                                 <h4 class="card-title">Insurance Industry Centric Business Intelligence (BI) Solution</h4>
                                                 <p class="card-text">Our developed Insurance Industry centric Business Intelligence (BI) solution offer real-time reporting and generate detailed and geolocation based visualizations depicting individual product, branch or agent performance, so that sales managers and representatives can easily determine which areas of the business are performing well and which ones need attention, as well as identify potential growth opportunities. </p> <p> The BI is well capable of predicting future sales of the policy as well as claims using Maching Learning and Time Series Forecasting Models. We have developed the system in a way that can free you from the burdain of analytics and reporting, and helps you focus more on generating new ideas based on real-time analytics and attractive self-explanatory visualizations. </p>
-                                                <a href="#" class="btn btn-primary">Read More</a>
+                                                <div class="CA-btn"><button onclick=" window.open('https://celloscope.shinyapps.io/custom_app_experiment/','_blank')" class="btn btn-primary" >See insurance bi demo</button></div>
                                             </div>
                                         </div>
 
@@ -169,17 +210,17 @@
                                 
                                 <div class="card">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="images/prod-market.jpg" class="w-100">
+                                        <div class="col-md-5">
+                                            <img src="images/prod-market.jpg" class="img-fluid">
                                         </div>
                                         
-                                        <div class="col-md-8 ">
-                                            <div class="card-block pl-5">
+                                        <div class="col-md-7 ">
+                                            <div class="card-block pl-4">
                                                 <h4 class="card-title">Market Research</h4>
                                                 <p class="card-text">Along with Business Intelligence (BI) System, Celloscope Analytics also offers Marketing Research as it has its own dedicated team of experience Statisticains and Data Scientists, as well as, we have a wide network across the country with 400 Agent Service Points. In today’s hyper competitive business world it’s the business which understands their customer best, that wins. If you do know how to uncover exactly what your ideal target market wants, it’s going to coming up with irrestible offers almost effortless because you’re really going to need to do is align your offers and align what your services or what your products are to your targeted customers with exactly what they want.
                                                     </p>
                                                   <p>We can help you with the marketing research areas of Market Segmentation, Product Pricing, Sales Driver Analysis, Consumer Preference Analysis, Sales Forecasting etc. to reach out more consumers and onboarding them using survey results and data analysis methods such as Sentiment Analysis, Clustering, Regression Analysis, t-Test, ANOVA,  Conjoint Analysis, and Factor Analysis.</p>
-                                                <a href="#" class="btn btn-primary">Read More</a>
+                                                  <!-- <div class="CA-btn"><button class="btn btn-primary" >Read More</button></div> -->
                                             </div>
                                         </div>
 
@@ -223,18 +264,15 @@
                                             <img class="img-fluid" src="images/client-logo.png" alt="">
                                         </div>
                                     <p>
-                                            “This is best and biggest unified platform
-                                    for instant online admission. We can easily
-                                    take admission for any course in any institute. This is best and biggest unified platform
-                                    for instant online admission. This is best and biggest unified platform
-                                    for instant online admission...“
+                                            “Celloscope Analytics's Business Intelligence System has lifted the burden on my shoulder by stating the current and future state of the business as well as identifying the lackings and scopes of growth with its powerful analytical tools. Its role-based features also enabled our agents and business executive to see their performances daily through various self-explanatory infographics. Their intense training sessions during the delivery of the BI and 24/7 support truly helped our employees perform better.“
                                     </p>
                                     <div class="d-flex align-items-center justify-content-center mt-5">
                                         
-                                        <div class="client-pic mr-4"><img src="images/client-1.png" alt=""></div>
+                                        <div class="client-pic mr-4"><img width="80" src="images/rasulthemd.jpg" alt=""></div>
                                         <div class="text-left">
-                                            <div class="name font-weight-bold">Ramkishor Verma</div>
-                                            <div class="designation">Agrani Bank Limited</div>
+                                            <div style="color: #000;" class="font-weight-bold">Syed Ahmed Rasul</div>
+                                            <div class="designation">Managing Director, DOER Services Limited</div>
+                                            <div>Master Agent, Agrani Bank Agent Banking</div>
                                         </div>
                                     </div>
                                 </div>  
@@ -265,7 +303,7 @@
 
                             <h2 class="text-left mb-4"><span class="darkBlue">How</span> It Works</h2>
                             
-                            <ul>
+                            <ul class="featureList">
                                 <li><img src="images/c-1.png" alt=""><a href="#feat1">INTEGRATING WITH INTERNAL DB </a></li>
                                 <li><img src="images/c-1.png" alt=""><a href="#feat2">ROLE BASED FEATURES </a></li>
                                 <li><img src="images/c-1.png" alt=""><a href="#feat3">DYNAMIC DASHBOARD </a></li>
@@ -274,7 +312,11 @@
                                 <li><img src="images/c-1.png" alt=""><a href="#feat6">PERFORMANCE COMPARISON </a></li>
                                 <li><img src="images/c-1.png" alt=""><a href="#feat7">MARKET RESEARCH TOOL </a></li>
                             </ul>
-                            <div class="CA-btn mt-5"><button style="width: 100%; display: table;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" >Live Demo</button></div>
+                            
+                            <div class="description">
+                                <p>The performance and growth of your business are visually represented using attractive Statistical Charts so you can understand them with ease.</p>
+                                <div class="CA-btn mt-4"><button style="width: 100%; display: table;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" >See Live Demo</button></div>
+                            </div>
                         </div>
                         <div class="main">
                             <div class="featureList">
@@ -562,33 +604,36 @@
         </div>
         <div class="modal-body">
             <div class="row">
-                <div class="col-12 d-flex text-center">
+                <div class="col-12 d-flex  text-center">
 
-                    <div class="choice-banking">
+                    <button  onclick=" window.open('https://celloscope.shinyapps.io/custom_app_experiment/','_blank')"  class="choice-insurance">
+                        
+                        <div class="insurance-icon"></div>
+                        <h3>Insurance BI system</h3>
+                        
+                    </button>
+
+                    <button  onclick=" window.open('https://shabbir-celloscope.shinyapps.io/Demo_Banking_App/','_blank')"  class="choice-banking">
 
                         <div class="banking-icon"></div>
                         <h3>Banking BI system</h3>
 
-                    </div>
-
-                    <div class="choice-insurance">
-
-                        <div class="insurance-icon"></div>
-                        <h3>Insurance BI system</h3>
-                        
-                    </div>
+                    </button>
 
 
                 </div>
                 
             </div>
         </div>
-        <div class="modal-footer">
+        <!-- <div class="modal-footer">
             <div style="width: 100%; display: table;" class="CA-btn"><button style="width: 100%; display: table;" class="btn btn-primary" >See Live Demo</button></div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
+
+
+  
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
@@ -655,7 +700,12 @@
         });
 
         
-        
+        $(function() {
+		$('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');   
+                    });		
+            });
 
 
         // Page Scroll
