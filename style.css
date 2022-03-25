@@ -470,11 +470,10 @@ line-height: 22px;
   /* FEATURE START */
 
 
-  .description{
+.description{
     margin-top: 40px;
     background-color: rgb(241, 241, 241);
     padding: 15px 15px;
-    border-top: 1px dased #000;
   }
 
 
@@ -850,6 +849,7 @@ line-height: 22px;
 	top: -3px;
 	font-weight: lighter;
 	text-shadow:none;
+  font-size: 18px;
 }
 .gal-container .modal-dialogue{
 	width: 80%;
@@ -908,4 +908,13 @@ i.red{
 .gal-container{
     padding-top :75px;
     padding-bottom:75px;
+}
+
+.popup-description{
+  background-color: #f7f7f7;
+  padding: 15px 15px;
+}
+
+.popup-description h4{
+  color: #000000;
 }
