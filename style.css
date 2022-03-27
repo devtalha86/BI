@@ -19,7 +19,7 @@ p{
 .CA-hero{
     width: 100%;
     background: linear-gradient(318deg, #005EA4 15.06%, #008CC8 62.98%, #00D1FF 86.21%);
-    
+    padding-top: 80px;
     height: 100vh;
     
     /* transform: rotate(-90deg); */
@@ -55,8 +55,20 @@ p{
     
 }
 
+#navbar {
+  background-color: #031A44;
+  position: fixed;
+  top: -150px;
+  margin: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 99;
+  padding: 10px 0 5px;
+}
+
 .Ca-MainNav {
-    margin: 25px 0;
+    
    }
 
 .Ca-MainNav ul{
@@ -300,67 +312,6 @@ line-height: 22px;
   /* Owl Carousel */
   
   
-  /* Popup Text */
-  
-  .white-popup-block {
-    background: #FFF;
-    padding: 20px 30px;
-    text-align: left;
-    max-width: 650px;
-    margin: 40px auto;
-    position: relative;
-  }
-  
-  .popuptext {
-    display: table;
-  }
-  .popuptext p {
-    margin-bottom: 10px;
-  }
-  .popuptext span {
-    font-weight: bold;
-    float: right;
-  }
-  /* Popup Text */
-  
-  /* Icon CSS */
-  .item {
-    position: relative;
-    
-  }
-  .item i {
-    display: none;
-    font-size: 4rem;
-    color: #FFF;
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    
-  }
-  .item a {
-    display: block;
-    width: 100%;
-  }
-  .item a:hover:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
-  .item a:hover i {
-    display: block;
-    z-index: 2;
-  }
-
-  /* HERO CAROUSEL END */
-
-
-
 
   
 @-webkit-keyframes bounce {
@@ -489,7 +440,7 @@ line-height: 22px;
     min-height: 200px;
     overflow: auto;
     position: sticky;
-    top: 5%;
+    top: 15%;
   }
 
 
@@ -524,6 +475,10 @@ line-height: 22px;
     width: 20px;
     margin-left: 8px;
   }
+
+  .featureList .feature-space{
+    padding-top: 20%;
+  }
   
   .main {
     width: 60%;
@@ -539,7 +494,7 @@ line-height: 22px;
     background-color: white;
     border-radius: 10px;
     color: #222;
-    padding: 15px;
+    
   }
   
   .wrapper {
@@ -695,8 +650,9 @@ line-height: 22px;
   @media (min-width: 1441px) {
   
     .CA-pattern-bg::before {
-      width: 4398px;
-      height: 1542px;
+      width: 3400px;
+      height: 1330px;
+      left: -41%;
     }
     
   }
@@ -771,7 +727,18 @@ line-height: 22px;
 
 @media (min-width: 320px) and (max-width: 480px) {
   
-  /* CSS */
+  .CA-Logo{
+    position: initial;
+  }
+  
+  .CA-Logo img{
+    width: 50%;
+  }
+
+  h1{
+    font-size: 40px;
+    line-height: 45px;
+  }
   
 }
 
@@ -917,4 +884,8 @@ i.red{
 
 .popup-description h4{
   color: #000000;
+}
+
+#target{
+  display: none;
 }
