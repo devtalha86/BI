@@ -36,8 +36,8 @@ p{
 .CA-pattern-bg::before {
     content: "";
     position: absolute;
-    width: 4350px;
-    left: -70%;
+    opacity: 0.5;
+    left: 0;
     right: 0;
     z-index: 0;
     background: url(images/pattern\ -bg.svg) repeat-x;
@@ -55,8 +55,20 @@ p{
     
 }
 
+#navbar {
+  background-color: #031A44;
+  position: fixed;
+  top: -150px;
+  margin: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 99;
+  padding: 10px 0 5px;
+}
+
 .Ca-MainNav {
-    margin: 25px 0;
+    
    }
 
 .Ca-MainNav ul{
@@ -126,12 +138,11 @@ h4{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 30px;
     /* identical to box height, or 188% */
     
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    text-transform: none;
     
     color: #FFFFFF;
 }
@@ -300,67 +311,6 @@ line-height: 22px;
   /* Owl Carousel */
   
   
-  /* Popup Text */
-  
-  .white-popup-block {
-    background: #FFF;
-    padding: 20px 30px;
-    text-align: left;
-    max-width: 650px;
-    margin: 40px auto;
-    position: relative;
-  }
-  
-  .popuptext {
-    display: table;
-  }
-  .popuptext p {
-    margin-bottom: 10px;
-  }
-  .popuptext span {
-    font-weight: bold;
-    float: right;
-  }
-  /* Popup Text */
-  
-  /* Icon CSS */
-  .item {
-    position: relative;
-    
-  }
-  .item i {
-    display: none;
-    font-size: 4rem;
-    color: #FFF;
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    
-  }
-  .item a {
-    display: block;
-    width: 100%;
-  }
-  .item a:hover:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
-  .item a:hover i {
-    display: block;
-    z-index: 2;
-  }
-
-  /* HERO CAROUSEL END */
-
-
-
 
   
 @-webkit-keyframes bounce {
@@ -458,7 +408,7 @@ line-height: 22px;
   
 .CA-testimonial{
   background-color: #F4F8FF;
-  padding: 50px 0;
+  padding: 50px 15px;
 }
 
 
@@ -489,7 +439,7 @@ line-height: 22px;
     min-height: 200px;
     overflow: auto;
     position: sticky;
-    top: 5%;
+    top: 15%;
   }
 
 
@@ -524,6 +474,10 @@ line-height: 22px;
     width: 20px;
     margin-left: 8px;
   }
+
+  .featureList .feature-space{
+    padding-top: 20%;
+  }
   
   .main {
     width: 60%;
@@ -539,7 +493,7 @@ line-height: 22px;
     background-color: white;
     border-radius: 10px;
     color: #222;
-    padding: 15px;
+    
   }
   
   .wrapper {
@@ -694,9 +648,19 @@ line-height: 22px;
 
   @media (min-width: 1441px) {
   
-    .CA-pattern-bg::before {
-      width: 4398px;
-      height: 1542px;
+    /* .CA-pattern-bg::before {
+      width: 3400px;
+      height: 1330px;
+      left: -41%;
+    } */
+
+    .CA-pattern-bg .carousel{
+      width: 750px;
+      margin-top: 30px;
+    }
+    
+    .CA-pattern-bg .carousel-indicators{
+      bottom: -40px;
     }
     
   }
@@ -710,10 +674,20 @@ line-height: 22px;
 
 @media (min-width: 1281px) and (max-width: 1440px) {
   
-  .CA-pattern-bg::before {
+  /* .CA-pattern-bg::before {
     width: 3392px;
     height: 1404px;
+  } */
+
+  .CA-pattern-bg .carousel{
+    width: 650px;
+    margin-top: 80px;
   }
+  
+  .CA-pattern-bg .carousel-indicators{
+    bottom: -40px;
+  }
+  
   
 }
 
@@ -735,10 +709,20 @@ line-height: 22px;
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
-  .CA-pattern-bg::before {
+  /* .CA-pattern-bg::before {
     width: 2421px;
     height: 1189px;
+  } */
+
+  .CA-pattern-bg .carousel{
+    width: 400px;
+    margin-top: 250px;
   }
+  
+  .CA-pattern-bg .carousel-indicators{
+    bottom: -40px;
+  }
+  
 
 }
 
@@ -771,7 +755,18 @@ line-height: 22px;
 
 @media (min-width: 320px) and (max-width: 480px) {
   
-  /* CSS */
+  .CA-Logo{
+    position: initial;
+  }
+  
+  .CA-Logo img{
+    width: 50%;
+  }
+
+  h1{
+    font-size: 40px;
+    line-height: 45px;
+  }
   
 }
 
@@ -917,4 +912,16 @@ i.red{
 
 .popup-description h4{
   color: #000000;
+}
+
+#target{
+  display: none;
+}
+
+.demoButton-hide{
+  display: none;
+}
+
+.demoButton-show{
+  display: block;
 }
