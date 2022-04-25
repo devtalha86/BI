@@ -26,6 +26,9 @@ p{
     
 }
 
+.hero-spacer{
+  margin-top: 80px;
+}
 
 .CA-pattern-bg{
     position: relative;
@@ -545,7 +548,7 @@ line-height: 22px;
 
 
 
-  footer{
+  .footer{
     background-color: #031A44;
     padding: 60px 0;
     margin: 0;
@@ -654,6 +657,8 @@ line-height: 22px;
       left: -41%;
     } */
 
+
+
     .CA-pattern-bg .carousel{
       width: 750px;
       margin-top: 30px;
@@ -754,6 +759,10 @@ line-height: 22px;
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  .hero-spacer{
+    margin-top: 0;
+  }
   
   .CA-Logo{
     position: initial;
@@ -767,6 +776,39 @@ line-height: 22px;
     font-size: 40px;
     line-height: 45px;
   }
+
+  .CA-HeroTitle p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+
+  .CA-HeroTitle .CA-btnHero{
+    margin-top: 30px;
+  }
+
+  .CA-btnHero button{
+    width: 100%;
+    font-size: 14px;
+    padding: 7px 0;
+  }
+
+  .CA-HeroTitle .CA-btnHero .powered-by {
+    border: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .CA-HeroTitle{
+    top: 80px;
+  }
+
+  .carousel{
+    margin: 105px 0 60px 0;
+  }
+
   
 }
 
