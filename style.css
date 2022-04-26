@@ -831,7 +831,7 @@ line-height: 22px;
   }
 
   .CA-hero{
-    height: 104vh;
+    height: 955px;
   }
 
   .spacer{
@@ -861,17 +861,13 @@ line-height: 22px;
 
   h3 {
     font-size: 22px;
+  }
+
+  .navbar{
+    padding-bottom: 15px;
+  }
+    
 }
-
-.navbar{
-  padding-bottom: 15px;
-}
-  
-}
-
-
-
-
 
 /* Mobile media query ends here */
 
