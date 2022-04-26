@@ -526,6 +526,7 @@ line-height: 22px;
   padding: 20px 30px;
   margin-bottom: 30px;
   box-shadow: 0px 0px 15px rgba(126, 126, 126, 0.15);
+  min-height: 420px;
 }
 
 .contactForm{
@@ -551,7 +552,6 @@ line-height: 22px;
   .footer{
     background-color: #031A44;
     padding: 60px 0;
-    margin: 0;
   }
 
   .footerLinks{
@@ -561,14 +561,18 @@ line-height: 22px;
 
   .footerLinks ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .footerLinks ul li:first-child{
-    line-height: 40px;
+    
   }
 
   .footerLinks ul li{
-    line-height: 26px;
+    line-height: 28px;
+    
+    margin-right: 30px;
   }
 
   .footerLinks ul li a{
@@ -796,7 +800,7 @@ line-height: 22px;
   .CA-HeroTitle .CA-btnHero .powered-by {
     border: none;
     padding: 0;
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
     text-align: center;
     width: 100%;
   }
@@ -806,11 +810,70 @@ line-height: 22px;
   }
 
   .carousel{
-    margin: 105px 0 60px 0;
+    margin: 122px 0 60px 0;
   }
 
+  .CA-Carousel{
+    margin-top: -150px;
+    
+  }
+
+  .bottom-arrow{
+    top: -30px;
+  }
+
+  h2.whatsItAbout{
+    font-size: 22px;
+  }
+
+  .CA-Carousel .owl-carousel{
+    margin-top: 20px;
+  }
+
+  .CA-hero{
+    height: 104vh;
+  }
+
+  .spacer{
+    margin-top: 40px;
+  }
+
+  h2{
+    font-size: 32px;
+  }
+  .gal-item .box{
+    height: initial !important;
+  }
+
+  .main{
+    width: 100%;
+  }
+
+  .featureList .feature-space{
+    margin: 10px 0 80px;
+    padding: 0;
+  }
+
+  .CA-btn button{
+    width: 100%;
+  }
+
+
+  h3 {
+    font-size: 22px;
+}
+
+.navbar{
+  padding-bottom: 15px;
+}
   
 }
+
+
+
+
+
+/* Mobile media query ends here */
 
 
 
@@ -966,4 +1029,39 @@ i.red{
 
 .demoButton-show{
   display: block;
+}
+
+
+
+
+#scroll {
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color:#3498db;
+  text-indent:-9999px;
+  display:none;
+  z-index: 9999;
+  -webkit-border-radius:60px;
+  -moz-border-radius:60px;
+  border-radius:60px
+}
+#scroll span {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-8px;
+  margin-top:-12px;
+  height:0;
+  width:0;
+  border:8px solid transparent;
+  border-bottom-color:#ffffff;
+}
+#scroll:hover {
+  background-color:#e74c3c;
+  opacity:1;filter:"alpha(opacity=100)";
+  -ms-filter:"alpha(opacity=100)";
 }

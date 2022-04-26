@@ -19,9 +19,58 @@
     <title>Celloscope Analytics</title>
   </head>
   <body>
+
+    
+
+    <!-- Back to top button -->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
     <div id="home" class="container-fluid">
 
-        <div class="row">
+        <div class="row position-sticky">
+            <div class="col-12 p-0">
+
+                <!-- MOBILE MENU -->
+                <nav style="background-color: #031A44;" class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#products">Our Products</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#feature">How It Works</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#usage">Usefulness</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Us</a>
+                            </li>
+
+                            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter"><strong>Live Demo</strong></a></li>
+                        
+                        </ul>
+                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- HIDDEN IN MOBILE -->
+        <div class="row d-none d-sm-block">
             <div class="col-12 p-0">
                 <div id="navbar" class="row">
                     <div class="container">
@@ -29,6 +78,8 @@
                             <div class="col-3">
                                 <img width="160" src="images/footer-logo.svg" alt="">
                             </div>
+
+                            
                             <div class="col-9">
                                 <div class="Ca-MainNav">
                                     <ul>
@@ -209,7 +260,7 @@
                                         </div>
                                         
                                         <div class="col-md-7">
-                                            <div class="card-block pl-4">
+                                            <div class="card-block pl-0 pl-md-4">
                                                 <h4 class="card-title">Agrani DOER Agent Banking Business Intelligence (BI) System</h4>
                                                 <p class="card-text">A Smart Technology that provides all Reports and Analytics under one roof without the dependency of a team of data analysts or data scientists.</p><p> Extracting the large amount of raw data from the internal database the role-based BI automatically generates and updates your interactive reports and visualizations that empowers not only the Managers and Business Executives in the office, but also the Agents on the fields. Utilizing the power of Data Science and Machine Learning this system can exhibit the future state/growth of the business and help making smart decisions based on that. </p>
                                                 
@@ -282,7 +333,7 @@
                                         </div>
                                         
                                         <div class="col-md-7">
-                                            <div class="card-block pl-4">
+                                            <div class="card-block pl-0 pl-md-4">
                                                 <h4 class="card-title">Insurance Industry Centric Business Intelligence (BI) Solution</h4>
                                                 <p class="card-text">Our developed Insurance Industry centric Business Intelligence (BI) solution offer real-time reporting and generate detailed and geolocation based visualizations depicting individual product, branch or agent performance, so that sales managers and representatives can easily determine which areas of the business are performing well and which ones need attention, as well as identify potential growth opportunities. </p> <p> The BI is well capable of predicting future sales of the policy as well as claims using Maching Learning and Time Series Forecasting Models. We have developed the system in a way that can free you from the burdain of analytics and reporting, and helps you focus more on generating new ideas based on real-time analytics and attractive self-explanatory visualizations. </p>
                                                 <div class="CA-btn"><button onclick=" window.open('https://celloscope.shinyapps.io/custom_app_experiment/','_blank')" class="btn btn-primary" >See insurance bi demo</button></div>
@@ -330,7 +381,7 @@
                                         </div>
                                         
                                         <div class="col-md-7 ">
-                                            <div class="card-block pl-4">
+                                            <div class="card-block pl-0 pl-md-4">
                                                 <h4 class="card-title">Market Research</h4>
                                                 <p class="card-text">Along with Business Intelligence (BI) System, Celloscope Analytics also offers Marketing Research as it has its own dedicated team of experience Statisticains and Data Scientists, as well as, we have a wide network across the country with 400 Agent Service Points. In today’s hyper competitive business world it’s the business which understands their customer best, that wins. If you do know how to uncover exactly what your ideal target market wants, it’s going to coming up with irrestible offers almost effortless because you’re really going to need to do is align your offers and align what your services or what your products are to your targeted customers with exactly what they want.
                                                     </p>
@@ -414,10 +465,13 @@
 
             <div class="row">
                 <div class="col-12">
+
+                    <h2 class="text-left text-center mb-4 d-block d-sm-none mt-4"><span class="darkBlue">How</span> It Works</h2>
                    
                     <div class="wrapper">
                         
-                        <div class="sidebar">
+
+                        <div class="sidebar d-none d-md-block">
 
                             
                             <h2 class="text-left mb-4"><span class="darkBlue">How</span> It Works</h2>
@@ -457,7 +511,7 @@
                                     <div id="feat2" class="feature-space">
                                 
                                         <div class="featureIcon d-flex align-items-center">
-                                            <img src="images/featIcon-1.svg" alt="">
+                                            <img src="images/feat-icon-2.svg" alt="">
                                             <h3 class="ml-3 mb-0">Role Based Feature</h3>
                                         </div>
                                         <p>Admin and the users (agent/branch managers) will have access to different features and portions of data based on their user credentials. There will also be a role of 'Superadmin' who will have the power to create or edit user credentials (username, password, expiry period, etc.).
@@ -469,7 +523,7 @@
                                     <div id="feat3" class="feature-space">
                                 
                                         <div class="featureIcon d-flex align-items-center">
-                                            <img src="images/featIcon-1.svg" alt="">
+                                            <img src="images/feat-icon-3.svg" alt="">
                                             <h3 class="ml-3 mb-0">Dynamic Dashboard</h3>
                                         </div>
                                         <p>The BI offers a dynamic interactive dashboard where users can narrow down to desired results by filtering and selecting various options. The customized reports and charts generated by the BI can be downloaded in pdf, CSV, Excel or jpeg format simply with a click. </p>
@@ -480,7 +534,7 @@
                                     <div id="feat4" class="feature-space">
                                 
                                         <div class="featureIcon d-flex align-items-center">
-                                            <img src="images/featIcon-1.svg" alt="">
+                                            <img src="images/feat-icon-4.svg" alt="">
                                             <h3 class="ml-3 mb-0">Geo-location Map based Summary </h3>
                                         </div>
                                         <p>A digital footprint of the branches/service points and transaction/sales summary is generated and updated automatically using high-quality leaflet maps. With the help of these attractive location-based summary maps, you will be able to see area-wise growths at a glance and make decisions on where you could spread your business. </p>
@@ -491,7 +545,7 @@
                                     <div id="feat5" class="feature-space">
                                 
                                         <div class="featureIcon d-flex align-items-center">
-                                            <img src="images/featIcon-1.svg" alt="">
+                                            <img src="images/feat-icon-5.svg" alt="">
                                             <h3 class="ml-3 mb-0">Forecasting</h3>
                                         </div>
                                         <p>Market Trend Analysis & Forecasting can be performed easily from the BI to foresee the growth of Transaction, IFR, Policy, Sales etc., for a certain period with the help of 8 Machine Learning Models together. The system empowers the decision-makers to utilize the power of intelligent forecasting to predict the future state of your business and make the decision based on that.</p>
@@ -502,7 +556,7 @@
                                     <div id="feat6" class="feature-space">
                                 
                                         <div class="featureIcon d-flex align-items-center">
-                                            <img src="images/featIcon-1.svg" alt="">
+                                            <img src="images/feat-icon-6.svg" alt="">
                                             <h3 class="ml-3 mb-0">Performance Comparison</h3>
                                         </div>
                                         <p>Performance comparison or identifying the top agents, business executives or branches are displayed inside the system. These performance charts are automatically updated on a daily/monthly basis based on the requirements.</p>
@@ -514,7 +568,7 @@
                                     <div id="feat7" class="feature-space">
                                 
                                         <div class="featureIcon d-flex align-items-center">
-                                            <img src="images/featIcon-1.svg" alt="">
+                                            <img src="images/feat-icon-2.svg" alt="">
                                             <h3 class="ml-3 mb-0">Market Research Tool</h3>
                                         </div>
                                         <p>Using the analytical power of the BI such as Clustering, Regression Analysis, Sentiment Analysis etc., a user will be able to identify its potential customers, understand market segmentation better and run targeted promotional activities based on that.</p>
@@ -541,29 +595,33 @@
 
                     <div class="CA-industry">
 
-                        <h2 class="text-center mb-4"><span class="darkBlue">Which industry</span> can be <br> benefited with our System</h2>
+                        <!-- VISIBLE IN ALL EXCEPT MOBILE -->
+                        <h2 class="text-center mb-4 d-none d-sm-block"><span class="darkBlue">Which industry</span> can be <br> benefited with our System</h2>
+
+                        <!-- VISIBLE IN MOBILE ONLY -->
+                        <h2 style="line-height: 44px;" class="text-center mb-4 d-block d-sm-none"><span class="darkBlue">Which industry</span> can be benefited with our System</h2>
 
                         <div class="container mt-5">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-12 col-sm-3 col-md-4">
                                     <div class="industryCard">
                                         <div class="mb-3"><img src="images/industry-icon.svg" alt=""></div>
                                         <h4>Banking</h4>
-                                        <p>Business intelligence offers banks the adaptability needed to excel in both business-as-usual conditions and in more turbulent economic times. It can also open the door for efficiency by shining a light on areas ready for cost-cutting measures, new business prospects, and more.</p>
+                                        <p>Business intelligence offers banks the adaptability needed to excel in both business-as-usual conditions and in more turbulent economic times. It can also open the door for efficiency by shining a light on areas ready for cost-cutting measures, new business prospects, and more. Banking BI allows organizations to visualize both historical and current data in real time.</p>
                                         <!-- <a href="#">More details</a> -->
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-3 col-md-4">
                                     <div class="industryCard">
                                         <div class="mb-3"><img src="images/industry-icon.svg" alt=""></div>
                                         <h4>Insurance Company</h4>
-                                        <p>Insurance business intelligence systems often include business analytics capabilities. Rolling data analytics, management, and migration functionalities all into one software system promotes better data quality and enables providers to be more efficient.
+                                        <p>Insurance business intelligence systems often include business analytics capabilities. Rolling data analytics, and management all into one software system promotes better data quality and enables providers to be more efficient. Having access to business intelligence and analytics is crucial for any insurance company craving to succeed in this highly competitive industry. 
 
                                         </p>
                                         <!-- <a href="#">More details</a> -->
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-3 col-md-4">
                                     <div class="industryCard">
                                         <div class="mb-3"><img src="images/industry-icon.svg" alt=""></div>
                                         <h4>Sales & Marketing</h4>
@@ -571,7 +629,7 @@
                                         <!-- <a href="#">More details</a> -->
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-3 col-md-4">
                                     <div class="industryCard">
                                         <div class="mb-3"><img src="images/industry-icon.svg" alt=""></div>
                                         <h4>FMCG Companies </h4>
@@ -582,25 +640,19 @@
                                         <!-- <a href="#">More details</a> -->
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-3 col-md-4">
                                     <div class="industryCard">
                                         <div class="mb-3"><img src="images/industry-icon.svg" alt=""></div>
                                         <h4>Health Sector</h4>
-                                        <p>Business Intelligence in healthcare industry is paving the way for remote healthcare and offer benefits of improved patient safety and management to reduced costs, and increased revenue to better visibility into financial operations. From monitoring cash flows to remaining compliant, the healthcare industry is moving into the data-driven world. And while, it’s only the beginning, BI is no longer an option for healthcare. It’s a necessity.
-
-                                        </p>
+                                        <p>Business Intelligence in healthcare industry is paving the way for remote healthcare and offer benefits of improved patient safety and management to reduced costs, and increased revenue to better visibility into financial operations. From monitoring cash flows to remaining compliant, the healthcare industry is moving into the data-driven world. </p>
                                         <!-- <a href="#">More details</a> -->
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-3 col-md-4">
                                     <div class="industryCard">
                                         <div class="mb-3"><img src="images/industry-icon.svg" alt=""></div>
                                         <h4>NGO</h4>
-                                        <p>Analytics tools can help NGO’s eliminate the challenge of managing the budgeting, planning and forecasting processes through dozens of unsynchronized spreadsheets. Instead, they centralize the data and simplify collaboration, enabling sophisticated “what-if” modeling to enable complex planning and analysis. Leveraging such tools can help organizations prioritize high-touch personal outreach and reduce overall marketing and outreach expenses to maximize returns.
-
-
-
-                                        </p>
+                                        <p>Analytics tools can help NGO’s eliminate the challenge of managing the budgeting, planning and forecasting processes through dozens of unsynchronized spreadsheets. Instead, they centralize the data and simplify collaboration, enabling sophisticated “what-if” modeling to enable complex planning and analysis.  </p>
                                         <!-- <a href="#">More details</a> -->
                                     </div>
                                 </div>
@@ -620,11 +672,11 @@
         <div id="contact" class="container spacer">
             <div class="row d-flex align-items-center">
 
-                <div class="col-6">
+                <div class="col-12 col-md-6">
 
                     <div class="contactForm">
 
-                        <h2 class="text-left mb-4"><span style="font-size: 32px;">Write to us</span></h2>
+                        <h2 class="text-center text-md-left mb-4"><span style="font-size: 32px;">Write to us</span></h2>
 
 
                         <form action="form.php" class="contact-form" method="post">
@@ -655,9 +707,9 @@
 
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-md-6">
 
-                    <div class="contactDetails pl-5">
+                    <div class="contactDetails pt-4 pt-sm-0 px-4 pl-md-5">
 
                         <h2 class="text-left"><span class="darkBlue">Want</span> to know more?</h2>
                         <div>to learn more about how our system can benefit your organization. Book a consultation today. </div>
@@ -689,30 +741,27 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="col-12 col-md-7 mb-5">
                     <img src="images/footer-logo.svg" alt="">
                     <p class="mt-2">All rights reserved &copy;	Celloscope analytics 2022</p>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-md-5">
 
                     <div class="footerLinks">
 
-                        <ul>
-                            <li style="color: #ffffff;"><strong>Celloscope Account</strong></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">How it works</a></li>
-                            <li><a href="#">Usefulness</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
+                        <div>
+                            <p style="color: #ffffff;"><strong>Quick Links</strong></p>
 
-                        
-                        <ul>
-                            <li style="color: #ffffff;"><strong>Documentation</strong></li>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Troubleshooting</a></li>
-                            <li><a href="#">API</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
+                            <ul>
+
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">Usefulness</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+
+                        </div>
+                        <div style="border: 1px solid #0062cc;" class="CA-btn mt-4"><button style="height: 100%;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" >See Live Demo</button></div>
 
                     </div>
 
@@ -721,6 +770,7 @@
         </div>
 
     </div>
+
 
 
     <!-- Modal -->
@@ -786,7 +836,6 @@
   </div>
 
 
-  
 
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
@@ -795,6 +844,20 @@
 
     <script>
 
+           
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 200) { 
+                    $('#scroll').fadeIn(); 
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false; 
+            }); 
+        });
 
         $('.choice-banking').click(function() {
             $('.choice-insurance').removeClass('selected');
@@ -817,6 +880,11 @@
         $('.live_demo').click(function() {
             window.open($(this).attr('target-link'),'_blank')
         })
+
+
+
+
+
 
         
         // $('.Show').click(function() {
@@ -894,14 +962,14 @@
         }
         })
         $(document).ready(function() {
-        $('.popup-youtube').magnificPopup({
-            disableOn: 320,
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: true
-        });
+            $('.popup-youtube').magnificPopup({
+                disableOn: 320,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: true
+            });
         });
         $('.item').magnificPopup({
         delegate: 'a',
@@ -935,7 +1003,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
